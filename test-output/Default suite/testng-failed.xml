@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.unit.testcases.CreatePurchaseOrderTestCase">
+        <methods>
+          <include name="addSpecialPurchaseOrder"/>
+          <include name="checkSpecialDescription"/>
+          <include name="deleteSpecialAddedPo"/>
+          <include name="getMaxPoId"/>
+          <include name="checkDescription"/>
+          <include name="createNewSpecialPo"/>
+          <include name="deleteAddedPo"/>
+          <include name="updatePo"/>
+          <include name="addPurchaseOrder"/>
+          <include name="createNewPo"/>
+          <include name="getMaxPoIdSpecial"/>
+        </methods>
+      </class> <!-- com.unit.testcases.CreatePurchaseOrderTestCase -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

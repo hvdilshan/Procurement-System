@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="556" started-at="2019-09-29T03:20:33Z" finished-at="2019-09-29T03:20:34Z">
+    <groups>
+      <group name="com.po.testcases">
+        <method signature="CreatePurchaseOrderTestCase.createNewPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="createNewPo" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.addPurchaseOrder()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="addPurchaseOrder" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.getMaxPoId()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="getMaxPoId" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.checkDescription()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="checkDescription" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.updatePo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="updatePo" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.deleteAddedPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="deleteAddedPo" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.createNewSpecialPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="createNewSpecialPo" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.addSpecialPurchaseOrder()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="addSpecialPurchaseOrder" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.getMaxPoIdSpecial()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="getMaxPoIdSpecial" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.checkSpecialDescription()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="checkSpecialDescription" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+        <method signature="CreatePurchaseOrderTestCase.deleteSpecialAddedPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="deleteSpecialAddedPo" class="com.unit.testcases.CreatePurchaseOrderTestCase"/>
+      </group> <!-- com.po.testcases -->
+    </groups>
+    <test name="Default test" duration-ms="556" started-at="2019-09-29T03:20:33Z" finished-at="2019-09-29T03:20:34Z">
+      <class name="com.unit.testcases.CreatePurchaseOrderTestCase">
+        <test-method status="PASS" signature="createNewPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="createNewPo" duration-ms="81" started-at="2019-09-29T08:50:33Z" finished-at="2019-09-29T08:50:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewPo -->
+        <test-method status="PASS" signature="addPurchaseOrder()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="addPurchaseOrder" duration-ms="95" started-at="2019-09-29T08:50:33Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.createNewPo" finished-at="2019-09-29T08:50:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPurchaseOrder -->
+        <test-method status="PASS" signature="getMaxPoId()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="getMaxPoId" duration-ms="0" started-at="2019-09-29T08:50:33Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.addPurchaseOrder" finished-at="2019-09-29T08:50:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMaxPoId -->
+        <test-method status="PASS" signature="checkDescription()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="checkDescription" duration-ms="30" started-at="2019-09-29T08:50:33Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.getMaxPoId, com.unit.testcases.CreatePurchaseOrderTestCase.addPurchaseOrder" finished-at="2019-09-29T08:50:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDescription -->
+        <test-method status="PASS" signature="updatePo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="updatePo" duration-ms="52" started-at="2019-09-29T08:50:33Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.checkDescription" finished-at="2019-09-29T08:50:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePo -->
+        <test-method status="PASS" signature="deleteAddedPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="deleteAddedPo" duration-ms="82" started-at="2019-09-29T08:50:33Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.updatePo" finished-at="2019-09-29T08:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAddedPo -->
+        <test-method status="PASS" signature="createNewSpecialPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="createNewSpecialPo" duration-ms="25" started-at="2019-09-29T08:50:34Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.deleteAddedPo" finished-at="2019-09-29T08:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewSpecialPo -->
+        <test-method status="PASS" signature="addSpecialPurchaseOrder()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="addSpecialPurchaseOrder" duration-ms="61" started-at="2019-09-29T08:50:34Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.createNewSpecialPo, com.unit.testcases.CreatePurchaseOrderTestCase.deleteAddedPo" finished-at="2019-09-29T08:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSpecialPurchaseOrder -->
+        <test-method status="PASS" signature="getMaxPoIdSpecial()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="getMaxPoIdSpecial" duration-ms="5" started-at="2019-09-29T08:50:34Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.addSpecialPurchaseOrder" finished-at="2019-09-29T08:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMaxPoIdSpecial -->
+        <test-method status="PASS" signature="checkSpecialDescription()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="checkSpecialDescription" duration-ms="25" started-at="2019-09-29T08:50:34Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.addSpecialPurchaseOrder, com.unit.testcases.CreatePurchaseOrderTestCase.getMaxPoIdSpecial" finished-at="2019-09-29T08:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSpecialDescription -->
+        <test-method status="PASS" signature="deleteSpecialAddedPo()[pri:0, instance:com.unit.testcases.CreatePurchaseOrderTestCase@685cb137]" name="deleteSpecialAddedPo" duration-ms="50" started-at="2019-09-29T08:50:34Z" depends-on-methods="com.unit.testcases.CreatePurchaseOrderTestCase.checkSpecialDescription" finished-at="2019-09-29T08:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSpecialAddedPo -->
+      </class> <!-- com.unit.testcases.CreatePurchaseOrderTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

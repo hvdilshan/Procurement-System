@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Querys>
+	<query id="query_add_employees">
+        <![CDATA[ CREATE TABLE employees(EmployeeID varchar(10) not null, Fullname varchar(25), Address  varchar(50), Faculty varchar(20),Department varchar(25), Designation varchar(20), primary key (EmployeeID))]]>
+	</query>
+	<query id="drop_tbl_if_exist">
+         <![CDATA[ DROP TABLE IF EXISTS employees ]]>
+	</query>
+	<query id="insert_to_employees">
+        <![CDATA[insert into employees (EmployeeID, Fullname, Address, Faculty, Department, Designation) values (?, ?, ?, ?, ?, ?)]]>
+	</query>
+	<query id="select_employees_id_given">
+         <![CDATA[select * from employees where employees.EmployeeID = ?]]>
+	</query>
+	<query id="select_all_employees">
+         <![CDATA[ select * from employees]]>
+	</query>
+	<query id="delete_employees_id_given">
+         <![CDATA[ delete from employees where employees.EmployeeID = ?]]>
+	</query>
+</Querys>

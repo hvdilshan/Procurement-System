@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ProcumentSystem</display-name>
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>com.procument.controller.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>logoutServlet</servlet-name>
+  	<servlet-class>com.procument.controller.logoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>logoutServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>supplierAccessServlet</servlet-name>
+  	<servlet-class>com.procument.controller.supplierAccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>supplierAccessServlet</servlet-name>
+  	<url-pattern>/supplierPanel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>itemAccessServlet</servlet-name>
+  	<servlet-class>com.procument.controller.itemAccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>itemAccessServlet</servlet-name>
+  	<url-pattern>/itemPanel</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>purchaseOrderSevlet</servlet-name>
+  	<servlet-class>com.procument.controller.purchaseOrderSevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>purchaseOrderSevlet</servlet-name>
+  	<url-pattern>/purchaseOrder</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>homeServelet</servlet-name>
+  	<servlet-class>com.procument.controller.homeServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>homeServelet</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>updatePoServlet</servlet-name>
+  	<servlet-class>com.procument.controller.updatePoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updatePoServlet</servlet-name>
+  	<url-pattern>/updatePo</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

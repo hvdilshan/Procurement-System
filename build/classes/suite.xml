@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1">
+	<test name="purchase_order">
+		<classes>
+			<class name="CreatePurchaseOrderTestCase"/>
+		</classes>
+	</test>
+</suite>

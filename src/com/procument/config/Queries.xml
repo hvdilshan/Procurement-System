@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Querys>
+	<query id="select_all_pos">
+         <![CDATA[ select * from purchase_order]]>
+	</query>
+
+	<query id="get_po_items">
+         <![CDATA[ select * from po_items where po_id=?]]>
+	</query>
+
+	<query id="get_total_po_cost">
+         <![CDATA[ select sum(po_price) from purchase_order where status='Approved']]>
+	</query>
+
+	<query id="get_total_po_count">
+         <![CDATA[ select count(po_id) from purchase_order where status='Approved']]>
+	</query>
+
+	<query id="get_draft_pos">
+         <![CDATA[ select * from purchase_order where description='draft_po']]>
+	</query>
+
+	<query id="get_po_by_id">
+         <![CDATA[ select * from purchase_order where po_id=?]]>
+	</query>
+
+	<query id="delete_po_by_id">
+         <![CDATA[ delete from purchase_order where po_id=?]]>
+	</query>
+
+	<query id="delete_po_item">
+         <![CDATA[ delete from po_items where item_id=? and po_id=?]]>
+	</query>
+
+	<query id="update_po_price">
+         <![CDATA[ update purchase_order set po_price=?, status=?, description=? where po_id=?]]>
+	</query>
+
+	<query id="update_po_below_marginal">
+         <![CDATA[ update purchase_order set site_id=?, dilivery_date=?, po_price=? where po_id=?]]>
+	</query>
+
+	<query id="update_po_over_marginal">
+         <![CDATA[ update purchase_order set site_id=?, dilivery_date=?, po_price=?, status=?, description=? where po_id=?]]>
+	</query>
+
+	<query id="attach_all_purchase_orders">
+         <![CDATA[ select * from purchase_order where supplier_id=?]]>
+	</query>
+
+	<query id="get_all_procument_staff">
+         <![CDATA[ select user_id from users where department='Procument']]>
+	</query>
+
+	<query id="select_user_by_id">
+         <![CDATA[ select * from users where user_id= ?]]>
+	</query>
+
+	<query id="add_po_notification">
+         <![CDATA[ insert into po_notification values(?,?,?)]]>
+	</query>
+
+	<query id="delete_po_notification">
+         <![CDATA[ delete from po_notification where po_id=?]]>
+	</query>
+
+	<query id="delete_notification">
+         <![CDATA[ delete from notification where notif_rel_id=? and notifi_type = 'PO']]>
+	</query>
+	
+	<query id="delete_po_notification">
+         <![CDATA[ delete from po_notification where po_id=?]]>
+	</query>
+
+	<query id="make_new_po">
+         <![CDATA[ insert into purchase_order values(?,?,?,?,?,?,?,?,?,?)]]>
+	</query>
+
+	<query id="insert_po_item">
+         <![CDATA[ insert into po_items values(?,?,?,?,?,?)]]>
+	</query>
+
+	<query id="add_notification">
+         <![CDATA[ insert into notification values(?,?,?,?,?)]]>
+	</query>
+
+	<query id="get_max_po_id">
+         <![CDATA[ select max(po_id) from purchase_order]]>
+	</query>
+
+	<query id="login">
+         <![CDATA[ select * from login where user_name = ? and password = ?]]>
+	</query>
+
+	<query id="select_all_users">
+         <![CDATA[ select * from users]]>
+	</query>
+	<query id="update_po_items">
+         <![CDATA[ update po_items set quantity=?, quantity1=? where po_id=? and item_id=?]]>
+	</query>
+	
+</Querys>
